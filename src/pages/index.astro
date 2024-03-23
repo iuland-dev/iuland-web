@@ -1,34 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Button from '../components/Button.astro'
+import Header from '../sections/header.astro'
+import Objectives from '../sections/objectives.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="grid grid-cols-1 md:grid-cols-[350px_5fr] text-white">
-		<section class="p-4 text-center max-w-md flex items-center justify-center">
-			<img class="w-full" src="/images/logo.png" alt="">
-		</section>
-		<section class="bg-primary flex-1 flex flex-col md:flex-row items-center gap-5 p-4 px-24 justify-end">
-			<h2 class="text-center md:text-right text-subtitle">Habla con un Coordinador de <br> Cuentas Empresariales</h2>
-			<Button text="Más Información" />
-		</section>
-	</div>
-	<div class="grid grid-cols-1 md:grid-cols-[350px_5fr]">
-		<div class="bg-primary p-6 flex flex-col items-center justify-center text-white">
-			<h1 class="text-large my-6"><span class="text-title">Unete</span><br> a la Generación de <br> Lideres Transformadores</h1>
-			<form action="" class="flex flex-col w-full gap-5">
-				<input type="text" placeholder="Nombre" name="name" class="w-full p-4 rounded text-center">
-				<input type="text" placeholder="Empresa" name="company" class="w-full p-4 rounded text-center">
-				<input type="text" placeholder="Perfil" name="profile" class="w-full p-4 rounded text-center">
-				<Button type="submit" text="Enviar"/>
-			</form>
-		</div>
-		<div class="bg-cover bg-[url('/images/hero.png')] bg-center h-[667px] xl:bg-right-center lg:h-[960px] bg-no-repeat p-24 text-white">
-			<section class="max-w-3xl text-center">
-				<h2 class="text-subtitle md:text-title">Programa de <br>Alto Desempeño</h2>
-				<h3 class="text-default md:text-custom">Empresas en Crecimiento; <br>Planeación Estratégica e Innovación</h3>
-				<Button classes="mt-10" text="Inicio 11 de Mayo 2024"/>
-			</section>
-		</div>
-	</div>
+	<Header />
+	<Objectives />
 </Layout>
