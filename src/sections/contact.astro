@@ -1,0 +1,21 @@
+---
+import Button from "../components/Button.astro"
+---
+
+<section class="bg-[url(/images/contact.png)] bg-no-repeat bg-cover bg-center">
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] p-4 items-center max-w-screen-xl gap-10 mx-auto">
+    <div class="text-center max-w-2xl">
+      <h2 class="text-large md:text-custom text-white"><span class="font-bold">¡Sé parte del cambio</span><br> lleva tu empresa a nuevas alturas con nosotros!</h2>
+      <p class="text-white text-default md:text-large">Únete a nosotros si eres: <br />Director, Dueño, Emprendedor, Sucesor de Empresas Familiares,</p>
+      <form action="" class="flex flex-col w-full gap-5 my-10">
+        <input type="text" placeholder="Nombre" name="name" class="w-full p-4 rounded text-center">
+        <input type="text" placeholder="Empresa" name="company" class="w-full p-4 rounded text-center">
+        <input type="text" placeholder="Perfil" name="profile" class="w-full p-4 rounded text-center">
+        <Button type="submit" text="Enviar"/>
+      </form>
+    </div>
+    <div class="hidden md:flex justify-end items-center ">
+      <img src="/images/contact1.png" class="w-full" alt="">
+    </div>
+  </div>
+</section>
