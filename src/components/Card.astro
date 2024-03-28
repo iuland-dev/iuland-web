@@ -1,8 +1,9 @@
 ---
+import { Image } from "astro:assets"
 const {image, text} = Astro.props
 ---
 
 <article class="text-large text-center grid gap-10 hover:scale-105 transition-all duration-500">
-  <img src={image} class="grayscale  hover:grayscale-0 transition-all duration-500 w-full mx-auto" alt="">
+  <Image src={image} class="grayscale hover:grayscale-0 transition-all duration-500 w-full mx-auto" alt="" width={368} height={310} />
   <p>{text}</p>
 </article>

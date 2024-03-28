@@ -1,0 +1,8 @@
+---
+const { icon, fill } = Astro.props
+---
+
+<svg class=`w-12` role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={fill ? fill : `#${icon.hex}`}>
+  <title>{icon.title}</title>
+  <path d={icon.path}></path>
+</svg>

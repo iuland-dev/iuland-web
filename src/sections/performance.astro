@@ -1,17 +1,18 @@
 ---
+import { Image } from "astro:assets"
 import Button from "../components/Button.astro"
 ---
 
-<section class="max-w-5xl mx-auto p-16">
+<section class="max-w-7xl mx-auto p-16">
   <article class="text-center">
     <h2 class="text-primary text-large">"El <span class="text-subtitle">verdadero viaje</span> de descubrimiento <span class="text-subtitle">consiste</span>, no en buscar nuevos paisajes, sino <span class="text-subtitle">en mirar con nuevos ojos</span> "</h2>
-    <img src="/images/sign.png" class="w-48 mx-auto" alt="">
+    <Image src="/images/sign.svg" alt="" width={192} height={82} class="mx-auto" />
   </article>
 </section>
 
 <section class="max-w-screen-2xl mx-auto p-10">
   <div class="grid grid-cols-1 lg:grid-cols-[2fr_2fr] items-center p-2 md:p-10 gap-10">
-    <img src="/images/performance.png" alt="">
+    <Image src="/images/performance.png" alt="" width={593} height={622} /> 
     <section class="grid gap-4 w-full text-center md:text-large">
       <h2 class="text-subtitle md:text-title">Alto Desempeño</h2>
       <p>Nuestra metodología va mas allá de conferencias y sesiones en línea. Incluye actividades prácticas que desarrollan habilidades de pensamiento crítico y análisis.</p>
