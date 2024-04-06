@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import Button from '../components/Button.astro'
+import Button from '../components/Button.jsx'
+import ContactForm from '../components/Contact/Form'
 ---
 <div class="grid grid-cols-1 md:grid-cols-[350px_5fr] text-white">
   <section class="p-4 text-center max-w-md flex items-center justify-center">
@@ -14,12 +15,7 @@ import Button from '../components/Button.astro'
 <div class="grid grid-cols-1 md:grid-cols-[350px_5fr]">
   <div class="bg-primary p-6 flex flex-col items-center justify-center text-white">
     <h1 class="text-center md:text-left text-large my-6"><span class="text-title">Unete</span><br> a la Generación de <br> Lideres Transformadores</h1>
-    <form action="" class="flex flex-col w-full gap-5">
-      <input type="text" placeholder="Nombre" name="name" class="w-full p-4 rounded text-center">
-      <input type="text" placeholder="Empresa" name="company" class="w-full p-4 rounded text-center">
-      <input type="text" placeholder="Perfil" name="profile" class="w-full p-4 rounded text-center">
-      <Button type="submit" text="Enviar"/>
-    </form>
+    <ContactForm client:visible />
   </div>
   <div class="bg-cover bg-[url('/images/hero.webp')] bg-center h-[667px] xl:bg-right-center lg:h-[960px] bg-no-repeat p-24 text-white">
     <section class="grid gap-2 md:max-w-3xl text-center">

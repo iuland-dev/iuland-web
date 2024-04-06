@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets"
-import Button from "../components/Button.astro"
+import ContactForm from "../components/Contact/Form"
 ---
 
 <section class="bg-[url(/images/contact.webp)] bg-no-repeat bg-cover bg-center h-auto">
@@ -8,12 +8,7 @@ import Button from "../components/Button.astro"
     <div class="text-center max-w-2xl">
       <h2 class="text-large md:text-custom text-white"><span class="font-bold">¡Sé parte del cambio</span><br> lleva tu empresa a nuevas alturas con nosotros!</h2>
       <p class="text-white text-default md:text-large">Únete a nosotros si eres: <br />Director, Dueño, Emprendedor, Sucesor de Empresas Familiares,</p>
-      <form action="" class="flex flex-col w-full gap-5 my-10">
-        <input type="text" placeholder="Nombre" name="name" class="w-full p-4 rounded text-center">
-        <input type="text" placeholder="Empresa" name="company" class="w-full p-4 rounded text-center">
-        <input type="text" placeholder="Perfil" name="profile" class="w-full p-4 rounded text-center">
-        <Button type="submit" text="Enviar"/>
-      </form>
+      <ContactForm client:visible />
     </div>
     <div class="hidden md:flex justify-end items-center ">
       <Image src="/images/contact1.webp" alt="" width={604} height={825} />
