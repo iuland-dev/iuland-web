@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets"
-import Button from "../components/Button.jsx"
+import EmailForm from "../components/Contact/EmailForm.jsx"
 ---
 
 <section class="max-w-7xl mx-auto p-16">
@@ -15,15 +15,38 @@ import Button from "../components/Button.jsx"
     <Image src="/images/performance.webp" alt="" width={593} height={622} /> 
     <section class="grid gap-4 w-full text-center md:text-large">
       <h2 class="text-subtitle md:text-title">Alto Desempeño</h2>
-      <p>Nuestra metodología va mas allá de conferencias y sesiones en línea. Incluye actividades prácticas que desarrollan habilidades de pensamiento crítico y análisis.</p>
+      <p>Nuestra metodología va más allá de conferencias y sesiones en línea. Incluye actividades prácticas que desarrollan habilidades de pensamiento crítico y análisis.</p>
       <p>Participarás en una práctica del método del caso para aplicar y evaluar tus habilidades en planeación estratégica e innovación.</p>
       <p class="text-bold md:text-subtitle">Certificación de Competencias</p>
       <p>El Programa Empresas en Crecimiento otorga una certificación por competencias en Desarrollo de Nuevos Modelos de Negocio <span class="text-bold md:text-subtitle">A01-EI Planeación Estratégica e Innovación</span>.</p>
-      <Button text="Conoce el Temario" classes="w-86 mx-auto"/>
+      <button 
+        id="temario" 
+        class="bg-gradient-primary p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500 w-86 mx-auto"
+      >
+        Conoce el Temario
+      </button>
     </section>
   </div>
 </section>
 
+<dialog id="themeModal" class="w-full max-w-md bg-primary color-white border border-primary rounded items-center p-10">
+  <h2 class="text-center text-large text-white">Por favor ingresa tu correo para continuar</h2>
+  <EmailForm client:visible />
+  <button type="reset" id="close" class="text-center text-white bg-accent2 p-4 rounded text-bold md:text-subtitle hover:scale-105 transition-all duration-500 mx-auto w-full">Cancelar</button>
+</dialog>
+
 <section class="w-full bg-primary text-white text-center text-large p-12">
   <h3 class="max-w-2xl mx-auto">"Una experiencia que revolucionará tu mente y tu modelo de negocio"</h3>
 </section>
+
+<script>
+  const modal = document.getElementById('themeModal')
+  const close = document.getElementById('close')
+  const handleClick = () => {
+    modal.showModal()
+  }
+
+  close.addEventListener("click",  () => modal.close() )
+
+  document.getElementById('temario').addEventListener('click', handleClick)
+</script> 

@@ -1,7 +1,6 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form, Field } from 'formik'
 import FormInput from './FormInput'
 import { sendMessage } from '../../api/api'
-import Button from '../Button.jsx'
 
 const ContactForm = () => {
   return (
@@ -24,6 +23,7 @@ const ContactForm = () => {
         }
         return errors
       }}
+      
       onSubmit={async (values, { setSubmitting, resetForm }) => {
 
         const message = {
