@@ -3,25 +3,22 @@ import { Image } from "astro:assets"
 import EmailForm from "../components/Contact/EmailForm.jsx"
 ---
 
-<section class="max-w-7xl mx-auto p-16">
-  <article class="text-center">
-    <h2 class="text-primary text-large">"El <span class="text-subtitle">verdadero viaje</span> de descubrimiento <span class="text-subtitle">consiste</span>, no en buscar nuevos paisajes, sino <span class="text-subtitle">en mirar con nuevos ojos</span> "</h2>
-    <Image src="/images/sign.svg" alt="" width={192} height={82} class="mx-auto" />
-  </article>
+<section class="bg-[url('/images/performance2.webp')] bg-no-repeat bg-center bg-cover px-4 py-8 md:p-24">
+  <div class="flex flex-col justify-center items-center max-w-7xl mx-auto h-full text-white text-center"> 
+    <h2 class="text-custom uppercase">Un programa de alto desempeño</h2>
+    <p class="text-default md:text-large text-center uppercase">10 semanas <br>40 sesiones de alto impacto <br>3 conferencias</p>
+  </div>
 </section>
 
 <section class="max-w-screen-2xl mx-auto p-10">
   <div class="grid grid-cols-1 lg:grid-cols-[2fr_2fr] items-center p-2 md:p-10 gap-10">
     <Image src="/images/performance.webp" alt="" width={593} height={622} /> 
-    <section class="grid gap-4 w-full text-center md:text-large">
-      <h2 class="text-subtitle md:text-title">Alto Desempeño</h2>
-      <p>Nuestra metodología va más allá de conferencias y sesiones en línea. Incluye actividades prácticas que desarrollan habilidades de pensamiento crítico y análisis.</p>
-      <p>Participarás en una práctica del método del caso para aplicar y evaluar tus habilidades en planeación estratégica e innovación.</p>
-      <p class="text-bold md:text-subtitle">Certificación de Competencias</p>
-      <p>El Programa Empresas en Crecimiento otorga una certificación por competencias en Desarrollo de Nuevos Modelos de Negocio <span class="text-bold md:text-subtitle">A01-EI Planeación Estratégica e Innovación</span>.</p>
+    <section class="grid gap-4 w-full md:text-large">
+      <h2 class="text-custom font-bold text-secondary">"Las empresas que crecen se convierten en inspiración para sus dueños, sus colaboradores y su comunidad"</h2>
+      <p>En IULAND acompañamos a las empresas en la transformación de su modelo de negocio brindado sesiones de alto desempeño para que pueda adaptarse a entornos más dinámicos y que se vuelvan más competitivas, rentables, humanas y mejor diferenciadas.</p>
       <button 
         id="temario" 
-        class="bg-gradient-primary p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500 w-86 mx-auto"
+        class="bg-accent p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500 w-86 mx-auto"
       >
         Conoce el Temario
       </button>
@@ -34,10 +31,6 @@ import EmailForm from "../components/Contact/EmailForm.jsx"
   <EmailForm client:visible />
   <button type="reset" id="close" class="text-center text-white bg-accent2 p-4 rounded text-bold md:text-subtitle hover:scale-105 transition-all duration-500 mx-auto w-full">Cancelar</button>
 </dialog>
-
-<section class="w-full bg-primary text-white text-center text-large p-12">
-  <h3 class="max-w-2xl mx-auto">"Una experiencia que revolucionará tu mente y tu modelo de negocio"</h3>
-</section>
 
 <script>
   const modal = document.getElementById('themeModal')
