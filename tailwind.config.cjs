@@ -6,9 +6,9 @@ export default {
   theme: {
     colors: {
       white: '#FFFFFF',
-      primary: '#012649',
-      secondary: '#113353',
-      accent: '#1FC667',
+      primary: '#012649', //Dark blue
+      secondary: '#113353', //Light blue
+      accent: '#d60b4b', 
       accent2: '#00B2A4'
     },
     fontSize: {
