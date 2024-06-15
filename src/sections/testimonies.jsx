@@ -13,7 +13,7 @@ const Testimonies = () => {
           testimonies && testimonies.map(item => {
             const {id, name, text, position, program} = item
             return(
-              <div className="flex flex-col gap-5 justify-around">
+              <div className="flex flex-col gap-5 justify-between">
                 <p className="italic">"{text}"</p>
                 <section className="text-xs"> 
                   <p className="text-bold">{name}</p>
