@@ -3,15 +3,10 @@ import { Image } from "astro:assets"
 import ContactForm from "../components/Contact/Form"
 ---
 
-<section class="bg-[url(/images/contact.webp)] bg-no-repeat bg-cover bg-center h-auto">
-  <div class="flex justify-around p-4 items-center max-w-7xl gap-10 mx-auto">
-    <div class="text-center max-w-2xl">
-      <h2 class="text-large md:text-custom text-white"><span class="font-bold">¡Sé parte del cambio</span><br> lleva tu empresa a nuevas alturas con nosotros!</h2>
-      <p class="text-white text-default md:text-large">Únete a nosotros si eres: <br />Director, Dueño, Emprendedor, Sucesor de Empresas Familiares,</p>
-      <ContactForm client:visible />
-    </div>
-    <div class="hidden md:flex  ">
-      <Image src="/images/contact1.webp" alt="" width={604} height={825} />
-    </div>
+<section class="bg-[url(/images/contact.webp)] bg-no-repeat bg-cover bg-top h-auto flex items-center justify-start p-4 md:pl-48">
+  <div class="text-center max-w-3xl">
+    <h2 class="text-large md:text-custom text-white"><span class="font-bold">¡Sé parte del cambio</span><br> lleva tu empresa a nuevas alturas con nosotros!</h2>
+    <p class="text-white text-default md:text-large">Si quieres transformar tu modelo de negocio, únete a la próxima generación.</p>
+    <ContactForm client:visible />
   </div>
 </section>

@@ -10,9 +10,15 @@ import { Image } from 'astro:assets'
   <Image src="/images/idearialab.webp" alt="" width={226} height={63} class="mx-auto" />
   <Image src="/images/idearia.webp" alt="" width={1200} height={63} class="mx-auto" />
   <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr] gap-10 my-10">
-    <Card text="IDEARIALAB es una agencia de innovación con más de 10 años transformando empresas en toda Latinoamérica, destacándose por su enfoque en métodos ágiles."/>
-    <Card text="Han liderado más de 350 proyectos de innovación y transformación en 7 países de LATAM, con más 25,000 personas capacitadas en métodos de innovación y estrategia."/>
-    <Card text="Aportan conocimiento y ayudan a explorar nuevas oportunidades de negocio, buscando la generación de valor económico y su transformación cultural."/>
+    <Card>
+      <span class="text-bold">IDEARIALAB</span> es una agencia de innovación con más de <span class="text-bold">10 años transformando empresas en toda Latinoamérica</span>, destacándose por su enfoque en métodos ágiles.
+    </Card>
+    <Card>
+        Han liderado más de <span class="text-bold">350 proyectos de innovación y transformación en 7 países de LATAM</span>, con más 25,000 personas capacitadas en métodos de innovación y estrategia.
+    </Card>
+    <Card>
+        Aportan conocimiento y ayudan a explorar <span class="text-bold">nuevas oportunidades de negocio</span>, buscando la generación de valor económico y su transformación cultural.
+    </Card>
   </div>
   
   <Button classes="mt-16" text="Conoce IDEARIALAB"  href="https://idearialab.com/" target="_blank"/>
@@ -20,9 +26,6 @@ import { Image } from 'astro:assets'
 </section>
 
 
-<section class="max-w-7xl mx-auto p-16">
-  <article class="text-center">
-    <h2 class="text-primary text-large">"El <span class="text-subtitle">verdadero viaje</span> de descubrimiento <span class="text-subtitle">consiste</span>, no en buscar nuevos paisajes, sino <span class="text-subtitle">en mirar con nuevos ojos</span> "</h2>
-    <Image src="/images/sign.svg" alt="" width={192} height={82} class="mx-auto" />
-  </article>
+<section class="p-16 flex items-center justify-center">
+  <h2 class="text-primary text-large text-center max-w-2xl ">"El <span class="text-subtitle">verdadero viaje</span> de descubrimiento <span class="text-subtitle">consiste</span>, no en buscar nuevos paisajes, sino <span class="text-subtitle">en mirar con nuevos ojos</span> "</h2>
 </section>

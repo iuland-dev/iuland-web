@@ -16,8 +16,8 @@ export default {
 			bold: ['18px', { fontWeight: 700}],
 			large: ['24px', { fontWeight: 200 }],
 			subtitle: ['24px', {  fontWeight: 700 }],
-      custom: ['46px', { fontWeight: 200}],
-			title: ['64px', { fontWeight: 900}]
+      custom: ['46px', { fontWeight: 200, lineHeight: '46px'}],
+			title: ['64px', { fontWeight: 900, lineHeight: '64px'}]
 		},
     fontFamily:{
 			montserrat: ['Montserrat','sans-serif'],
