@@ -44,7 +44,7 @@ const ContactForm = () => {
           <FormInput name="name" type="text" placeholder='Nombre'/>
           <FormInput name="company" type="company" placeholder='Empresa' />
           <FormInput name="phone" type="tel" placeholder='Teléfono' />
-          <input type="submit" value='Enviar' className='bg-gradient-primary p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500' />
+          <input type="submit" value='Enviar' className='bg-accent p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500' />
         </Form>
       )}
     </Formik>   

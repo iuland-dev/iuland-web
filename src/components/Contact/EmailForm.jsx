@@ -41,7 +41,7 @@ const EmailForm = () => {
           <input 
             type="submit"
             disabled={isSubmitting} 
-            value='Enviar' className='bg-gradient-primary p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500' 
+            value='Enviar' className='bg-accent p-4 rounded text-bold md:text-subtitle text-center text-white hover:scale-105 transition-all duration-500' 
           />
           
         </Form>
