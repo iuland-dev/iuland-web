@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro'
 import Header from '../sections/header.astro'
 import Objectives from '../sections/objectives.astro'
 import Focus from '../sections/focus.astro'
-import Testimonies from '../sections/testimonies.astro'
+import Testimonies from '../sections/testimonies.jsx'
 import Performance from '../sections/performance.astro'
 import Clients from '../sections/clients.astro'
 import IdeariaLab from '../sections/idearialab.astro'
@@ -15,7 +15,7 @@ import Footer from '../sections/footer.astro'
 	<Header />
 	<Objectives />
 	<Focus/>
-	<Testimonies/>
+	<Testimonies client:visible/>
 	<Performance/>
 	<Clients/>
 	<IdeariaLab />

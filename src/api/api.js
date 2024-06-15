@@ -12,3 +12,17 @@ export const sendMessage = async (message) => {
     return result
   } catch{} 
 }
+
+export const fetchTestimonies = async () => {
+  try{
+    const results = await fetch(`${API}testimonies`)
+    const { data } = await results.json()
+    const testimonials = data.map(item => {
+      const {id, attributes} = item 
+      const {name, text, position, program} = attributes
+      return { id, name, text, position, program}
+    })
+    return testimonials
+  }catch {
+  }
+}

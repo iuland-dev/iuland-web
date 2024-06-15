@@ -12,6 +12,7 @@ export default {
       accent2: '#00B2A4'
     },
     fontSize: {
+      xs: ['.75rem', {lineHeight: '1rem'}],
 			default: ['18px', { fontWeight: 400}],
 			bold: ['18px', { fontWeight: 700}],
 			large: ['24px', { fontWeight: 200 }],
