@@ -3,25 +3,21 @@ import { Image } from 'astro:assets'
 import Button from '../components/Button.jsx'
 import ContactForm from '../components/Contact/Form'
 ---
-<div class="grid grid-cols-1 md:grid-cols-[350px_5fr] text-white">
-  <section class="p-4 text-center max-w-md flex items-center justify-center">
+<div class="flex flex-col md:flex-row justify-center md:justify-between text-white p-4">
+  <section class=" text-center max-w-md flex items-center justify-center">
     <Image src="/images/logo.svg" alt="A bird." width="215" height="96" loading='eager'/>
   </section>
-  <section class="bg-primary flex-1 flex flex-col md:flex-row items-center gap-5 p-4 px-24 justify-end">
+  <section class="text-primary flex flex-col md:flex-row items-center gap-5 p-4 ">
     <h2 class="text-center md:text-right text-subtitle">Habla con un Coordinador de <br> Cuentas Empresariales</h2>
     <Button text="Más Información" href='https://api.whatsapp.com/send/?phone=523781222105&text&type=phone_number' target='_blank' />
   </section>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-[350px_5fr]">
-  <div class="bg-primary p-6 flex flex-col items-center justify-center text-white">
-    <h1 class="text-center md:text-left text-large my-6"><span class="text-title">Únete</span><br> a la Generación de <br> Lideres Transformadores</h1>
-    <ContactForm client:visible />
-  </div>
-  <div class="bg-cover bg-[url('/images/hero.webp')] bg-center h-[667px] xl:bg-right-center lg:h-[960px] bg-no-repeat p-24 text-white">
-    <section class="grid gap-2 md:max-w-3xl text-center">
-      <h2 class="text-subtitle lg:text-title">Programa de <br>Alto Desempeño</h2>
-      <h3 class="text-default lg:text-custom">Empresas en Crecimiento; <br>Planeación Estratégica e Innovación</h3>
-      <p class="bg-gradient-primary p-4 rounded text-bold md:text-subtitle text-center text-white mt-10 w-86 mx-auto">Inicio 11 de Mayo 2024</p>
-    </section>
-  </div>
+
+<div class="flex flex-col md:flex-row justify-around items-end bg-cover bg-[url('/images/hero.webp')] bg-center h-[667px] xl:bg-right-center lg:h-[775px] bg-no-repeat text-white">
+  <section class="grid gap-2 md:max-w-3xl text-center self-center">
+    <h2 class="text-subtitle lg:text-title">Programa de <br>Alto Desempeño</h2>
+    <h3 class="text-default lg:text-custom uppercase">Para Empresas en Crecimiento</h3>
+    <p class="bg-accent p-4 px-16 rounded text-bold md:text-subtitle text-center text-white mt-10 w-86 mx-auto">Proximo Programa <br>30 Agosto 2024</p>
+  </section>
+  <img class="hidden md:block" src="/images/hero.png" alt="">
 </div>
