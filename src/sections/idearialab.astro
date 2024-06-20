@@ -1,22 +1,31 @@
 ---
 import {siLinkedin} from 'simple-icons'
 import Card from '../components/Card.astro'
-import Icon from '../components/Icon.astro'
+import Button from '../components/Button'
 import { Image } from 'astro:assets'
 ---
 
-<section class="max-w-7xl mx-auto text-center p-12 text-large md:text-custom">
+<section class="max-w-7xl mx-auto text-center p-12 text-large">
   <h2>Este <span class="font-bold">programa</span> es impartido por</h2>
   <Image src="/images/idearialab.webp" alt="" width={226} height={63} class="mx-auto" />
-  <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr] gap-10 mt-10">
-    <Card image="/images/idearia1.webp" text="IDEARIALAB es una agencia de innovación con más de 10 años transformando empresas en toda Latinoamérica, destacándose por su enfoque en métodos ágiles."/>
-    <Card image="/images/idearia2.webp" text="Han liderado más de 350 proyectos de innovación y transformación en 7 países de LATAM, con más 25,000 personas capacitadas en métodos de innovación y estrategia."/>
-    <Card image="/images/idearia3.webp" text="Aportan conocimiento y ayudan a explorar nuevas oportunidades de negocio, buscando la generación de valor económico y su transformación cultural."/>
+  <Image src="/images/idearia.webp" alt="" width={1200} height={63} class="mx-auto" />
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr] gap-10 my-10">
+    <Card>
+      <span class="text-bold">IDEARIALAB</span> es una agencia de innovación con más de <span class="text-bold">10 años transformando empresas en toda Latinoamérica</span>, destacándose por su enfoque en métodos ágiles.
+    </Card>
+    <Card>
+        Han liderado más de <span class="text-bold">350 proyectos de innovación y transformación en 7 países de LATAM</span>, con más 25,000 personas capacitadas en métodos de innovación y estrategia.
+    </Card>
+    <Card>
+        Aportan conocimiento y ayudan a explorar <span class="text-bold">nuevas oportunidades de negocio</span>, buscando la generación de valor económico y su transformación cultural.
+    </Card>
   </div>
-
-  <a class="flex items-center justify-center gap-2 text-large mx-auto m-16 hover:scale-105 transition-all duration-500" href="https://idearialab.com/" target="_blank">
-    <Icon icon={siLinkedin} />
-    Conoce más sobre ellos en idearialab.com
-  </a>
   
+  <Button classes="mt-16" text="Conoce IDEARIALAB"  href="https://idearialab.com/" target="_blank"/>
+
+</section>
+
+
+<section class="p-16 flex items-center justify-center">
+  <h2 class="text-primary text-large text-center max-w-2xl ">"El <span class="text-subtitle">verdadero viaje</span> de descubrimiento <span class="text-subtitle">consiste</span>, no en buscar nuevos paisajes, sino <span class="text-subtitle">en mirar con nuevos ojos</span> "</h2>
 </section>

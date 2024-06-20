@@ -1,0 +1,22 @@
+---
+import { fetchClients } from "../api/api"
+const clients = await fetchClients()
+clients.map(client => {
+  console.log(client.logo.data.attributes.url)
+})
+---
+
+<section class=" text-center p-12 text-large md:text-custom bg-[#f9f9f9]">
+  <h2 class="text-large md:text-custom"><span class="font-bold ">Empresas</span> que han confiado en nosotros</h2>
+
+  <section class="w-full text-center text-large p-12 max-w-6xl mx-auto">
+    <h3 class="max-w-2xl mx-auto">"Una experiencia que revolucionará tu mente y tu modelo de negocio"</h3>
+    <div class="grid grid-cols-1 md:grid-cols-5">
+      {
+        clients.map(client => (
+          <img src={client.logo.data.attributes.url} alt="">
+        ))
+      }
+    </div>
+  </section>
+</section>

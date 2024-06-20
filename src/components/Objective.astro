@@ -2,7 +2,7 @@
 const {title, content} = Astro.props
 ---
 
-<article class="p-4 md:p-6 border-r-8 border-secondary rounded-3xl">
+<article class="p-4 md:p-6 border-r-8 border-secondary rounded-3xl items-start flex flex-col justify-center">
   <h3 class="text-bold md:text-subtitle text-accent">{title}</h3>
   <p class="text-default md:text-large text-secondary">{content}</p>
 </article>

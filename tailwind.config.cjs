@@ -6,18 +6,19 @@ export default {
   theme: {
     colors: {
       white: '#FFFFFF',
-      primary: '#012649',
-      secondary: '#113353',
-      accent: '#1FC667',
+      primary: '#113353', //Dark blue
+      secondary: '#034E7B', //Light blue
+      accent: '#d60b4b', 
       accent2: '#00B2A4'
     },
     fontSize: {
+      xs: ['.75rem', {lineHeight: '1rem'}],
 			default: ['18px', { fontWeight: 400}],
 			bold: ['18px', { fontWeight: 700}],
 			large: ['24px', { fontWeight: 200 }],
 			subtitle: ['24px', {  fontWeight: 700 }],
-      custom: ['46px', { fontWeight: 200}],
-			title: ['64px', { fontWeight: 900}]
+      custom: ['46px', { fontWeight: 200, lineHeight: '46px'}],
+			title: ['64px', { fontWeight: 900, lineHeight: '64px'}]
 		},
     fontFamily:{
 			montserrat: ['Montserrat','sans-serif'],
