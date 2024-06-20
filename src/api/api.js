@@ -26,3 +26,18 @@ export const fetchTestimonies = async () => {
   }catch {
   }
 }
+
+export const fetchClients = async () => {
+  try{
+    const results = await fetch(`${API}clients?populate=*`)
+    const { data } = await results.json()
+    const clients = data.map(item => {
+      const { id, attributes} = item
+      const{name, logo} = attributes
+      return {id, name, logo}
+    }) 
+    return clients
+  } catch {
+
+  }
+}
